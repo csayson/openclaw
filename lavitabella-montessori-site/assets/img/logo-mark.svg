@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="La Vita è Bella Montessori leaf mark">
+  <circle cx="32" cy="32" r="32" fill="#5B7553"/>
+  <path d="M32 14c-9 6-14 13-14 22 0 7 5 13 14 14 9-1 14-7 14-14 0-9-5-16-14-22z" fill="#FAF6EF"/>
+  <path d="M32 18v30M32 30c-4-2-7-2-10-4M32 38c4-2 7-2 10-4" fill="none" stroke="#5B7553" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="32" cy="50" r="3" fill="#C96F4A"/>
+</svg>
