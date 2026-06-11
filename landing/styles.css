@@ -44,6 +44,11 @@ body[data-variant="c"] {
   --accent-2: #6ee7b7;
   --accent-ink: #00251a;
 }
+body[data-variant="d"] {
+  --accent: #8b5cff;       /* the cape — heroic violet */
+  --accent-2: #b69bff;
+  --accent-ink: #160a33;
+}
 
 * {
   box-sizing: border-box;

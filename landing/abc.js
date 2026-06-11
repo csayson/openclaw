@@ -11,16 +11,17 @@
   "use strict";
 
   var KEY = "abc_variant";
-  var VARIANTS = ["a", "b", "c"];
-  // 33 / 33 / 34 cumulative thresholds
+  var VARIANTS = ["a", "b", "c", "d"];
+  // 25 / 25 / 25 / 25 cumulative thresholds
   var SPLIT = [
-    { v: "a", max: 0.33 },
-    { v: "b", max: 0.66 },
-    { v: "c", max: 1.0 },
+    { v: "a", max: 0.25 },
+    { v: "b", max: 0.5 },
+    { v: "c", max: 0.75 },
+    { v: "d", max: 1.0 },
   ];
 
   function readOverride() {
-    var m = /[?&](?:v|variant)=([abc])/i.exec(global.location.search);
+    var m = /[?&](?:v|variant)=([abcd])/i.exec(global.location.search);
     return m ? m[1].toLowerCase() : null;
   }
 
@@ -34,7 +35,7 @@
   }
 
   function readCookie() {
-    var m = new RegExp("(?:^|; )" + KEY + "=([abc])").exec(document.cookie);
+    var m = new RegExp("(?:^|; )" + KEY + "=([abcd])").exec(document.cookie);
     return m ? m[1] : null;
   }
 
@@ -54,7 +55,7 @@
     for (var i = 0; i < SPLIT.length; i++) {
       if (r < SPLIT[i].max) return SPLIT[i].v;
     }
-    return "c";
+    return "d";
   }
 
   /* Resolve the visitor's variant: override > stored > new roll. */

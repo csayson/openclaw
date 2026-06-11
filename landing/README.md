@@ -1,6 +1,6 @@
-# A/B/C Landing Test — ClaudeWorks
+# A/B/C/D Landing Test — ClaudeWorks
 
-Three complete landing-page variants behind a randomizing router. Same offer,
+Four complete landing-page variants behind a randomizing router. Same offer,
 same pricing — different **story**. We're testing which *pain* converts, not
 button colors.
 
@@ -12,16 +12,17 @@ button colors.
 | `a.html`     | **Direction A — "The Busywork Killer."** Pain-first / time recovery. |
 | `b.html`     | **Direction B — "The Power Tool."** Metaphor-led / identity.  |
 | `c.html`     | **Direction C — "The Redemption Story."** Validates the failed first AI attempt. |
+| `d.html`     | **Direction D — "The Cape."** You're the superhero; the product is the cape that amplifies you. |
 | `styles.css` | Shared stylesheet. Each variant sets one `--accent`; the rest follows. |
 | `abc.js`     | Assignment, persistence (localStorage + cookie), and analytics. |
 
 ## How the split works
 
-- **33 / 33 / 34**, randomized, **sticky per visitor** via `localStorage`
+- **25 / 25 / 25 / 25**, randomized, **sticky per visitor** via `localStorage`
   (mirrored to a 90-day cookie so an analytics tool or server can read it too).
-- `index.html` → rolls once, stores `abc_variant`, redirects to `a|b|c.html`.
+- `index.html` → rolls once, stores `abc_variant`, redirects to `a|b|c|d.html`.
 - Returning visitors always land on the same variant.
-- **QA override:** append `?v=a`, `?v=b`, or `?v=c` to any URL to force a
+- **QA override:** append `?v=a`, `?v=b`, `?v=c`, or `?v=d` to any URL to force a
   variant (also pins it for that browser). The footer of each page has quick
   Preview links.
 
@@ -84,8 +85,17 @@ landing/
   tried AI.
 - **B** — strongest brand voice; best for trades-heavy ad audiences (watch on
   Meta ads targeting contractors).
-- **Likely endgame:** A's stat headline + C's redemption logic + B's metaphor as
-  brand voice. Let data confirm before blending.
+- **D** — "The Cape" superhero framing: identity-affirming like B, but
+  emotional rather than utilitarian (you're the hero, the product just amplifies
+  you). Strong brand/recall play; watch its share-through and warm-traffic
+  conversion against B.
+- **Likely endgame:** A's stat headline + C's redemption logic + B's/D's
+  metaphor as brand voice. Let data confirm before blending.
+
+> **Note on a 4-way split:** four variants means each gets ~25% of traffic, so
+> reaching the ~100-conversions-per-arm bar takes more traffic/time than the
+> original 3-way. If traffic is thin, consider running B vs. D head-to-head
+> first (both are the "metaphor" slot) and racing the winner against A and C.
 
 ## Copy hygiene
 
