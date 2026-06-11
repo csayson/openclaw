@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting…</title>
+    <!-- ============================================================
+         Randomizing router: 33/33/34, sticky per visitor.
+         Swap in your analytics snippet below (Plausible/PostHog)
+         before going live so the variant prop is captured.
+         ============================================================ -->
+    <!--
+    <script defer data-domain="YOURDOMAIN.com" src="https://plausible.io/js/script.manual.pageview-props.js"></script>
+    -->
+    <script src="abc.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background: #0b0f17;
+        color: #aab4c5;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <p>One moment…</p>
+    <noscript>
+      <p>
+        JavaScript is required. Pick a version:
+        <a href="a.html">A</a> · <a href="b.html">B</a> · <a href="c.html">C</a>
+      </p>
+    </noscript>
+    <script>
+      ABC.assignVariant();
+    </script>
+  </body>
+</html>

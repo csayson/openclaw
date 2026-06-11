@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "swipepages": {
+      "url": "https://agentsapi.swipepages.com/mcp/connector",
+      "headers": {
+        "x-api-key": "${SWIPEPAGES_API_KEY}"
+      }
+    }
+  }
+}
