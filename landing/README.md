@@ -113,3 +113,9 @@ randomizing router). To run the same test inside **SwipePages** instead, the
 SwipePages MCP server must be attached to the Claude Code session — see
 `../.mcp.json` and the note in the PR/commit. Once connected, the copy blocks
 above map 1:1 to SwipePages sections.
+
+**Intended deployment:** publish the A/B/C/D test to the custom domain
+**`onomachat.com`** via SwipePages (SwipePages hosts the pages and provides
+native traffic-splitting, so its built-in split replaces `index.html` + `abc.js`
+once live). Map the variants to SwipePages A/B/C/D test slots in this order:
+A = Busywork Killer, B = Power Tool, C = Redemption Story, D = The Cape.
