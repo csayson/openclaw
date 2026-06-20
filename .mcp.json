@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "Dart": {
+      "type": "http",
+      "url": "https://mcp.dartai.com/mcp"
+    }
+  }
+}
